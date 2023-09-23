@@ -1,7 +1,16 @@
 import express from 'express';
 import fetch from 'node-fetch';
+import cors from 'cors';
 
 const app = express();
+
+// CORS configuration to allow requests from your frontend's URL
+const corsOptions = {
+  origin: 'https://restapicodingchallenge.onrender.com', 
+  optionsSuccessStatus: 200,
+};
+
+app.use(cors(corsOptions));
 
 const getFilteredCountries = async (url) => {
   try {
