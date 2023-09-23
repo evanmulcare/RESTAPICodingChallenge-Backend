@@ -2,11 +2,11 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "main": "server.mjs",
+  "main": "Server.mjs",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server",
+    "start": "node Server.mjs",
     "dev": "nodemon server"
   },
   "keywords": [],
